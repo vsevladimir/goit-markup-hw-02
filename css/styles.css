@@ -1,208 +1,161 @@
 :root {
-    --color-primary: #212121;
-    --color-brand: #757575;
-    --color-footer: #2F303A;
-    --color-background: #F5F4FA;
-    --color-white: #FFFFFF;
-    --color-blue: #2196F3;
-    --color-accent: 0;
+    --primary-brand: #4D5AE5;
+    --pressed-state: #404BBF;
+    --dark: #2E2F42;
+    --success: #31D0AA;
+    --text: #434455;
+    --subtle-text: #8E8F99;
+    --accent: #E7E9FC;
+    --light: #F4F4FD;
+    --modal-overlay: #2E2F42 0.4;
+    --hero-background: #2E2F42 0.7;
+    --white-background: #FFFFFF;
+    --modal-background: #FCFCFC;
 }
 
 body {
-    color: var(--color-primary);
-    background-color: var(--color-background);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-}
-
-.main-logo {
-    text-decoration: none;
-    display: flex;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31/26);
-    letter-spacing: 0.03em;
-}
-
-.main-logo-first {
-    color: var(--color-blue);
-}
-
-.main-logo-header {
-    color: #000000;
-}
-
-.main-logo-footer {
-    color: var(--color-white);
-}
-
-.ptimary-button {
-    cursor: pointer;
-    color: var(--color-white);
-    background-color: var(--color-blue);
-    border: 0;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30/16);
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-}
-
-.ptimary-button:hover {
-    color: var(--color-primary);
-    background-color: var(--color-background);
-}
-
-.ptimary-button:focus {
-    color: var(--color-primary);
-    background-color: var(--color-background);
-}
-
-.buttons {
-    cursor: pointer;
-    color: var(--color-primary);
-    background-color: var(--color-background);
-    border: 0;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(26/16);
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-
-.buttons:hover {
-    color: var(--color-white);
-    background-color: var(--color-blue);
-}
-
-.buttons:focus {
-    color: var(--color-white);
-    background-color: var(--color-blue);
-}
-
-.nav-panel {
-    text-decoration: none;
-    color: var(--color-primary);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16/14);
+    line-height: 1.5;
     letter-spacing: 0.02em;
+    color: var(--text);
+    background-color: var(--white-background);
 }
 
-.nav-panel:focus {
-    color: var(--color-blue);
+.contacts {
+    font-style: normal;
 }
 
-.nav-panel:hover {
-    color: var(--color-blue);
+.list {
+    list-style: none;
 }
 
-.head-contacts {
-    color: var(--color-brand);
+/* logo */
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    word-spacing: 0em;
+    color: var(--primary-brand);
+}
+
+
+.logo-dark {
+    color: var(--dark);
+}
+
+.logo-white {
+    color: var(--light);
+}
+
+/* links */
+
+.link {
     text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16/14);
-    letter-spacing: 0.02em;
 }
 
-.head-contacts:focus {
-    color: var(--color-blue);
+.link:is(:hover,:focus) {
+    color:var(--pressed-state);
 }
 
-.head-contacts:hover {
-    color: var(--color-blue);
+/* 4 section */
+
+.team {
+    background-color: var(--light);
 }
 
-.hero-section {
-    background-color: var(--color-footer);
+.team-item {
+    background-color: var(--white-background);
 }
+
+/* headers */
 
 .hero-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60/44);
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--color-white);
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--white-background);
+    text-align: center
 }
 
-.feature {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16/14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-
-.feature-description {
-    font-size: 14px;
-    line-height: calc(24/14);
-    letter-spacing: 0.03em;
-    color: var(--color-brand);
-}
-
-.we-do {
-    font-weight: 700;
+.section-header {
     font-size: 36px;
-    line-height: calc(42/36);
-    text-align: center;
-    letter-spacing: 0.03em;
+    line-height: 1.11;
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+    color: var(--dark);
+    text-align: center
 }
 
-.name {
+
+
+.top-header {
     font-weight: 500;
-    line-height: calc(19/16);
-    text-align: center;
-    letter-spacing: 0.03em;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--dark);
 }
 
-.role {
-    line-height: calc(19/16);
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--color-brand);
+.footer-paragraph {
+    color: var(--light);
 }
 
-.portfolio {
-    background-color: var(--color-white);
+.header-link {
+    font-weight: 500;
+    color: var(--dark);
 }
 
-.project-name {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(36/18);
-    letter-spacing: 0.06em;
+.header-contact-link {
+    color: var(--text);
 }
 
-.project-type {
-    line-height: calc(30/16);
-    letter-spacing: 0.03em;
-    color: var(--color-brand);
+.hero {
+    background-color: var(--dark);
 }
 
 .footer {
-    background-color: var(--color-footer);
+    background-color: var(--dark);
 }
 
-.company-address {
-    font-style: normal;
-    font-size: 14px;
-    line-height: calc(24/14);
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    text-decoration: none;
+/* buttons */
+
+.buttons {
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    
 }
 
-.contact-footer {
-    font-style: normal;
-    font-size: 14px;
-    line-height: calc(24/14);
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
+.hero-button {
+    background-color: var(--primary-brand);
+    color: var(--white-background);
+}
+
+.hero-button:is(:hover,:focus) {
+    background-color: var(--pressed-state);
+}
+
+/* portfolio */
+
+.project-button {
+    background-color: var(--light);
+    color: var(--primary-brand);
+
+}
+
+.project-button:is(:hover,:focus) {
+    background-color: var(--pressed-state);
+    color: var(--white-background);
+}
+
+.project-paragraph {
+    color: var(--text);
 }
